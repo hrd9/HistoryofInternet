@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      text-align: left;
+      font-size: 15px;
+      color: red;
+      padding: 20px;
+    }
+
+    header {
+      background-color: deepskyblue;
+    }
+
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+
+
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;/* we can change font style by using the font-family css tag */
+      background: aqua;/* you can change the background color of body using background css tag */
+    }
+    ul{
+      position:absolute;/* set the position of the navigation bar*/
+      top: 8%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0;
+      padding: 20px 0; /* Adding some padding */
+      background: #fff; /* Add a white background color to the top navigation */
+      display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+      border-radius: 10px; /* add the border radius */
+      box-shadow: 0 10px 30px rgba(0,0,0,.3)
+    }
+
+
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+    ul {
+      list-style-type: upper-alpha;
+      margin: 0;
+      padding: 10px;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+      border-right:10px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: white;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 70px 60px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+  </style>
+</head>
+<body>
+ <section>
+   <ul>
+     <li><a href="#">Introduction</a></li>
+     <li><a href="#">Inventors</a></li>
+     <li><a href="#">Timeline</a></li>
+     <li><a href="#">ElovutionofTechnology</a></li>
+     <li><a href="#">FutureofInternet</a></li>
+     <li><a href="#">AboutUs</a></li>
+   </ul>
+ </section>
+
+<section>
+  <article>
+    <h1>Internet</h1>
+    <p> Internet is a type of Wide Area Network spread over the entire globe. It is a very large
+      network of thousands of smaller networks. Billions of computers relate to each other and communicate with each other and share
+      resources. INTERNET is a short form of Interconnected Network of all the Web Servers Worldwide.
+      It is also called the World Wide Web or simply the Web</p>
+  </article>
+  <footer>
+    <p>Footer</p>
+  </footer>
+</section>
+
+
+
+
+
+</body>
+</html>
+
