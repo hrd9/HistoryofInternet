@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HistoryofInternet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            padding: 0;
+            font-family: sans-serif;
+            background: aqua;
+        }
+        ul{
+            position:fixed;/* set the position of the navigation bar*/
+            top: 16%;
+            left: 50%;
+            margin: 0;
+            border-radius: 5px; /* add the border radius */
+        }
+        footer {
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 60px 60px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        .module1 { grid-area: z_layout; }
+        .module2 { grid-area: menu; }
+        .module3 { grid-area: maincontent; }
+        .module4 { grid-area: footer; }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+    'z_layout z_layout z_layout z_layout f_layout f_layout'
+    'menu menu menu menu menu menu'
+    'maincontent maincontent footer footer footer footer';
+            grid-gap: 5px;
+            background-image: url("Images/WorldWideWeb.jpg");
+            padding: 10px;
+            color: red;
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            border: #111111;
+            font-size: 28px;
+            font-family: "Times New Roman", Times, serif;
+            text-transform: uppercase;
+        }
+        div.scrollmenu {
+            color: red;
+            alignment: right;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: tomato;
+            animation-fill-mode: backwards;
+            text-align: right;
+            padding: 35px;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+
+    <div class="module1">
+        <img src="Images/logo1.jpg" width="200" height="150" align="left" alt="Hello">
+        <div class="scrollmenu">
+            <a href ="#home">Home</a>
+            <a href ="inventors.html">Inventors</a>
+            <a href ="#timeline">Timeline</a>
+            <a href ="#evolution">Evolution</a>
+            <a href ="#future">Future</a>
+        </div>
+
+    </div>
+    <div class="module2">
+        <img src="Images/Internet.PNG" width="950" height="500">
+    </div>
+
+    <div class="module3">
+        <h3>Overview</h3>
+    </div>
+
+    <div class="module4">
+        <h3>Description</h3>
+    </div>
+
+</div>
+
+</body>
+</html>
